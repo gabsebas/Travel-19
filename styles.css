@@ -1,0 +1,287 @@
+* {
+box-sizing: border-box;
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EBD8D0;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E0806;
+    color: white;
+
+}
+.website-title {
+   
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li {
+  list-style: none;  
+
+}
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+
+}
+
+.navbar-links li :hover{
+    background-color: #555555;
+} 
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+
+    }
+    
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.single-box:nth-child(1) .img-area{
+    background-image: url(./assets/mask.png)
+}
+.single-box:nth-child(2) .img-area{
+    background-image: url(./assets/luggage.png)
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url(./assets/trust.png)
+}
+
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.img-text{
+    font-family: Poppins;
+    padding: 20px;
+
+}
+
+.img-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 0rem;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+.logo-image{
+    flex: 1;
+    padding: 0rem 0rem 0rem 0rem;
+
+}
+
+.logo-image>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    object-fit: cover;
+    transform: translateX(-50px);
+    box-shadow: 0px opx 3px rgba(0,0,0,.5);
+}
+
+.container-info{
+    flex: 2;
+    padding: 2rem;
+
+}
+
+.container-title h2{
+    color:#0E0806;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 60px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #60a0d5;
+    }
+    
+    .logo-image{
+        flex: 1;
+        padding: 0rem 1rem 0rem 1rem;
+    
+    }
+    
+    .logo-image>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.3rem;
+        object-fit: cover;
+        transform: translateX(-50px);
+        box-shadow: 0px opx 3px rgba(0,0,0,.5);
+    }
+    
+    .container-info{
+        flex: 2;
+        padding: 0rem 1rem;
+    
+    }
+    
+}
+
+.title-tracker h3{
+text-align: center;
+
+
+}
+
+.map{
+    display: flex;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #FFFBFF;
+}
+
+.info {
+    width: 100%;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+}
+
+.middle h2 {
+    text-align: center;
+
+}
+
+.airport_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+        
+}
+.middle{
+    background-color: whitesmoke;
+}
+
+    
+
+.info p{
+    color: #555555;
+}
+
+.infographic{
+display: block;
+  width: 50%;
+  height: 50%;
+}
